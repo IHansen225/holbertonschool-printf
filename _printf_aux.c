@@ -2,6 +2,14 @@
 #include <unistd.h>
 #include <string.h>
 
+/**
+ * _putchar - put a character
+ * @ap: character to put
+ * @mode: usage mode
+ * 
+ * Return: 1
+ */
+
 int _putchar(va_list ap, int mode)
 {
 	char *c = va_arg(ap, char *);
@@ -12,10 +20,25 @@ int _putchar(va_list ap, int mode)
 	return (1);
 }
 
+/**
+ * singlewrite - write a single character
+ * @c: character to write
+ * 
+ * Return: 1
+ */
+
 int singlewrite(char c)
 {
 	return (write(1, &c, 1));
 }
+
+/**
+ * stringiterator: iterate over a string and return its contents
+ * @ap: string to iterate
+ * @mode: usage mode
+ * 
+ * Return: string length
+ */
 
 int stringiterator(va_list ap, int mode)
 {
@@ -26,6 +49,14 @@ int stringiterator(va_list ap, int mode)
 	va_end(ap);
 	return (strlen(s));
 }
+
+/**
+ * ntostring - convert an int to a string 
+ * @ap: int to convert
+ * @base: int base
+ * 
+ * Return: strlen 
+ */
 
 int ntostring(va_list ap, int base)
 {

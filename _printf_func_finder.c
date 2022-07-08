@@ -1,6 +1,13 @@
 #include "main.h"
 #include <stddef.h>
 
+/**
+ * func_finder - returs function to use in _printf 
+ * @c: character identifier for function
+ * 
+ * Return: ftype containing function
+ */
+
 ftype func_finder(char c)
 {
 	ftype func[] = {
