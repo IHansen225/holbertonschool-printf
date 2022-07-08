@@ -66,8 +66,7 @@ int ntostring(va_list ap, int base)
 		i = ((base == 2) ? i : i - 1);
 		for (; i >= 0; i--)
 			write(1, &buffer[i], 1);
-	}
-	else
+	} else
 	{
 		buffer[i] = '0';
 		write(1, &buffer[i], 1);
@@ -110,8 +109,7 @@ int ftostring(va_list ap, int precision)
 			buffer[i++] = '0';
 		for (; i >= 0; i--)
 			write(1, &buffer[i], 1);
-	}
-	else
+	} else
 	{
 		buffer[i++] = '0';
 		buffer[i++] = '.';

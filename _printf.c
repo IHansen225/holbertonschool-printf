@@ -29,6 +29,10 @@ int _printf(const char *format, ...)
 					{
 						j += (*(func_data.op))(ap, func_data.mode);
 						i = ((*(func_data.fmt) == '.') ? (i + 4) : (i + 2));
+					} else
+					{
+						j += singlewrite(format[i++]);
+						j += singlewrite(format[i++]);
 					}
 				}
 				else if ((format[i] == '%') && (format[i + 1] == '\0'))
@@ -37,8 +41,7 @@ int _printf(const char *format, ...)
 				{
 						j += singlewrite(format[i++]);
 						i++;
-				}
-				else
+				} else
 						j += singlewrite(format[i++]);
 			}
 		va_end(ap);
