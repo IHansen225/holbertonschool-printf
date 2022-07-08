@@ -13,9 +13,9 @@ int _printf(const char *format, ...)
     int i = 0, j = 0;
     ftype func_data;
     va_list ap;
-    
+
     va_start(ap, format);
-        while ((format[i] != '\0') && (format[i]))
+        while ((format[i] != '\0') && (format[i] != NULL))
         {
             if ((format[i] == '%') && (format[i + 1] != '%'))
 			{
