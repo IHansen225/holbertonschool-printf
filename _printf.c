@@ -40,7 +40,7 @@ int _printf(const char *format, ...)
 				else
 				{
 					j += singlewrite(format[i++]);
-					i = ((format[i] == '%') ? i + 1 : i);
+					i = ((format[i + 1] == '%') ? i + 1 : i);
 				}
 			}
 		va_end(ap);
