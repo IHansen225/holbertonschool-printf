@@ -66,6 +66,8 @@ int ntostring(va_list ap, int base)
 
 	n = (va_arg(ap, int));
 	buffer = malloc(64);
+	if (!buffer)
+		return (0);
 	flag = ((n < 0) ? 1 : 0);
 	n = ((n < 0) ? (n * -1) : n);
 	if (n != 0)
