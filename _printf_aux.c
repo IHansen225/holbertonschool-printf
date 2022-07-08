@@ -67,10 +67,9 @@ int stringiterator(va_list ap, int mode)
 int ntostring(va_list ap, int base)
 {
 	char *buffer;
-	int n;
+	int n = (va_arg(ap, int));
 	int i = 0, len, flag;
 
-	n = (va_arg(ap, int));
 	buffer = malloc(64);
 	if (!buffer)
 		return (0);
