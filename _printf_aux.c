@@ -6,7 +6,7 @@
  * _putchar - put a character
  * @ap: character to put
  * @mode: usage mode
- * 
+ *
  * Return: 1
  */
 
@@ -23,7 +23,7 @@ int _putchar(va_list ap, int mode)
 /**
  * singlewrite - write a single character
  * @c: character to write
- * 
+ *
  * Return: 1
  */
 
@@ -36,7 +36,7 @@ int singlewrite(char c)
  * stringiterator: iterate over a string and return its contents
  * @ap: string to iterate
  * @mode: usage mode
- * 
+ *
  * Return: string length
  */
 
@@ -51,11 +51,11 @@ int stringiterator(va_list ap, int mode)
 }
 
 /**
- * ntostring - convert an int to a string 
+ * ntostring - convert an int to a string
  * @ap: int to convert
  * @base: int base
- * 
- * Return: strlen 
+ *
+ * Return: strlen
  */
 
 int ntostring(va_list ap, int base)

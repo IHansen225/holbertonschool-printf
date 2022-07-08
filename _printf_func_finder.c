@@ -2,9 +2,9 @@
 #include <stddef.h>
 
 /**
- * func_finder - returs function to use in _printf 
+ * func_finder - returs function to use in _printf
  * @c: character identifier for function
- * 
+ *
  * Return: ftype containing function
  */
 
