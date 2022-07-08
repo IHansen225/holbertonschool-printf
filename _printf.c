@@ -23,7 +23,7 @@ int _printf(const char *format, ...)
                 func_data = func_finder(format[i + 1]);
 			    if (func_data.op != 0)
                 {
-                    j += (*(func_data.op))(ap, *(func_data.mode));
+                    j += (*(func_data.op))(ap, func_data.mode);
 			        i = ((*(func_data.fmt) == '.') ? (i + 4) : (i + 2));
                 }
             }
