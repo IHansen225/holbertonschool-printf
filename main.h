@@ -1,10 +1,10 @@
+#ifndef PRNTF
+#define PRNTF
+
 #include <stdarg.h>
 #include <stdlib.h>
 #include <string.h>
 #include <stddef.h>
-
-#ifndef PRNTF
-#define PRNTF
 
 typedef struct function_type {
 	char *fmt;

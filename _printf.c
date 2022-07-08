@@ -37,10 +37,10 @@ int _printf(const char *format, ...)
 				continue;
 			else if ((format[i] == '%') && (format[i] == '%'))
 			{
-					j += singlewrite(format[i++]);
-					i++;
+				j += singlewrite(format[i++]);
+				i++;
 			} else
-					j += singlewrite(format[i++]);
+				j += singlewrite(format[i++]);
 		}
 	va_end(ap);
 	return (j);
