@@ -1,5 +1,6 @@
 #include "main.h"
 #include <unistd.h>
+#include <stddef.h>
 
 /**
  * _printf: print string to stdout using variable arguments
@@ -15,7 +16,7 @@ int _printf(const char *format, ...)
     va_list ap;
 
     va_start(ap, format);
-        while ((format[i] != '\0') && (format[i] != 0))
+        while ((format[i] != '\0') && (format[i] != NULL))
         {
             if ((format[i] == '%') && (format[i + 1] != '%'))
 			{
