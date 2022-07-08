@@ -50,6 +50,7 @@ int stringiterator(va_list ap, int mode)
 	else
 	{
 		write(1, "(null)", 6);
+		return (6);
 	}
 	va_end(ap);
 	return (strlen(s));
