@@ -49,8 +49,7 @@ int stringiterator(va_list ap, int mode)
 		write(1, s, strlen(s));
 	else
 	{
-		s = NULL;
-		write(1, s, 0);
+		write(1, "(null)", 6);
 	}
 	va_end(ap);
 	return (strlen(s));
