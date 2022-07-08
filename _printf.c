@@ -25,7 +25,7 @@ int _printf(const char *format, ...)
 				if ((format[i] == '%') && (format[i + 1] != '%') && (format[i + 1] != '\0'))
 				{
 					func_data = func_finder(format[i + 1]);
-					if (func_data.op != 0)
+					if (func_data.op != NULL)
 					{
 						j += (*(func_data.op))(ap, func_data.mode);
 						i = ((*(func_data.fmt) == '.') ? (i + 4) : (i + 2));
