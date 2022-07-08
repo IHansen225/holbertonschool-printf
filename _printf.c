@@ -24,7 +24,7 @@ int _printf(const char *format, ...)
 		va_start(ap, format);
 			while ((format[i] != '\0') && (format != NULL))
 			{
-				if ((format[i] == '%') (format[i] == '%') && (format[i + 1] != '\0'))
+				if ((format[i] == '%') && (format[i] == '%') && (format[i + 1] != '\0'))
 				{
 					func_data = func_finder(format[i + 1]);
 					if (func_data.op != 0)
@@ -40,7 +40,7 @@ int _printf(const char *format, ...)
 					if ((format[i] == '%') && (format[i] == '%'))
 					{
 						j += singlewrite(format[i++]);
-						i++
+						i++;
 					}
 					else
 						j += singlewrite(format[i++]);
