@@ -1,5 +1,6 @@
 #include "main.h"
 #include <unistd.h>
+#include <string.h>
 
 int _putchar(va_list ap, int mode)
 {
@@ -13,27 +14,17 @@ int _putchar(va_list ap, int mode)
 
 int singlewrite(char c)
 {
-	return write(1, &c, 1);
-}
-
-int _strlen(char *s)
-{
-	int i = 0;
-
-	while (s[i] != '\0')
-		i++;
-
-	return (i);
+	return (write(1, &c, 1));
 }
 
 int stringiterator(va_list ap, int mode)
 {
-	char *s = va_arg(ap, char *);;
+	char *s = va_arg(ap, char *);
 
 	(void) mode;
-	write(1, s, _strlen(s));
+	write(1, s, strlen(s));
 	va_end(ap);
-	return (_strlen(s));
+	return (strlen(s));
 }
 
 int ntostring(va_list ap, int base)
@@ -72,7 +63,7 @@ int ntostring(va_list ap, int base)
 		write(1, &buffer[i], 1);
 		return (1);
 	}
-	len = _strlen(buffer);
+	len = strlen(buffer);
 	free(buffer);
 	va_end(ap);
 	return (len);
@@ -115,10 +106,10 @@ int ftostring(va_list ap, int precision)
 		buffer[i++] = '.';
 		for (i = 0; i == precision; i++)
 			buffer[i++] = '0';
-		write(1, buffer, (_strlen(buffer)));
+		write(1, buffer, (strlen(buffer)));
 		return (1);
 	}
-	len = _strlen(buffer);
+	len = strlen(buffer);
 	free(buffer);
 	va_end(ap);
 	return (len);
