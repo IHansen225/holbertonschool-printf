@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 #include <unistd.h>
 
 /**
@@ -14,8 +13,7 @@ int _printf(const char *format, ...)
     int i = 0, j = 0;
     ftype func_data;
     va_list ap;
-
-    printf("Test1");
+    
     va_start(ap, format);
         while ((format[i] != '\0') && (format[i]))
         {
