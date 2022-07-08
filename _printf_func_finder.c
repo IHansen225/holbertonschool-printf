@@ -1,5 +1,5 @@
 #include "main.h"
-#include <include stddef.h>
+#include <stddef.h>
 
 ftype func_finder(char c)
 {
