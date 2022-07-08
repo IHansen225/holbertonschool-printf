@@ -45,7 +45,10 @@ int stringiterator(va_list ap, int mode)
 	char *s = va_arg(ap, char *);
 
 	(void) mode;
-	write(1, s, strlen(s));
+	if (s)
+		write(1, s, strlen(s));
+	else
+		write(1, NULL, NULL);
 	va_end(ap);
 	return (strlen(s));
 }
