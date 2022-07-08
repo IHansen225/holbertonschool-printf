@@ -1,4 +1,4 @@
-#include "_printf.h"
+#include "main.h"
 
 ftype func_finder(char c)
 {
