@@ -5,7 +5,6 @@ ftype func_finder(char c)
 {
 	ftype func[] = {
 		{"c", _putchar, 0},
-		{"%", _putchar, 0},
 		{"s", stringiterator, 0},
 		{"d", ntostring, 10},
 		{"x", ntostring, 16},

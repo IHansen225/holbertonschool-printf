@@ -39,9 +39,7 @@ int _printf(const char *format, ...)
 					j += singlewrite(format[i++]);
 				}
 				else
-				{
 					j += singlewrite(format[i++]);
-				}
 			}
 	va_end(ap);
 	}
