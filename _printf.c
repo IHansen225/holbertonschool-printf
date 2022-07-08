@@ -17,34 +17,31 @@ int _printf(const char *format, ...)
 
 	if (format == NULL)
 		return (-1);
-	else
-	{
-		va_start(ap, format);
-			while ((format[i] != '\0') && (format != NULL))
+	va_start(ap, format);
+		while ((format[i] != '\0') && (format != NULL))
+		{
+			if ((format[i] == 37) && (format[i + 1] != 37) && (format[i + 1] != '\0'))
 			{
-				if ((format[i] == '%') && (format[i + 1] != '%') && (format[i + 1] != '\0'))
+				func_data = func_finder(format[i + 1]);
+				if (func_data.op != NULL)
 				{
-					func_data = func_finder(format[i + 1]);
-					if (func_data.op != NULL)
-					{
-						j += (*(func_data.op))(ap, func_data.mode);
-						i = ((*(func_data.fmt) == '.') ? (i + 4) : (i + 2));
-					} else
-					{
-						j += singlewrite(format[i++]);
-						j += singlewrite(format[i++]);
-					}
-				}
-				else if ((format[i] == '%') && (format[i + 1] == '\0'))
-					continue;
-				else if ((format[i] == '%') && (format[i] == '%'))
-				{
-						j += singlewrite(format[i++]);
-						i++;
+					j += (*(func_data.op))(ap, func_data.mode);
+					i = ((*(func_data.fmt) == '.') ? (i + 4) : (i + 2));
 				} else
-						j += singlewrite(format[i++]);
+				{
+					j += singlewrite(format[i++]);
+					j += singlewrite(format[i++]);
+				}
 			}
-		va_end(ap);
-	}
+			else if ((format[i] == '%') && (format[i + 1] == '\0'))
+				continue;
+			else if ((format[i] == '%') && (format[i] == '%'))
+			{
+					j += singlewrite(format[i++]);
+					i++;
+			} else
+					j += singlewrite(format[i++]);
+		}
+	va_end(ap);
 	return (j);
 }
