@@ -15,6 +15,10 @@ int _printf(const char *format, ...)
     ftype func_data;
     va_list ap;
 
+    if (format == NULL)
+    {
+        return (0);
+    }
     va_start(ap, format);
         while ((format[i] != '\0') && (format != NULL))
         {
