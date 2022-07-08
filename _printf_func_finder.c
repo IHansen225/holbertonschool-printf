@@ -12,8 +12,6 @@ ftype func_finder(char c)
 		{"o", ntostring, 8},
 		{"b", ntostring, 2},
 		{"i", ntostring, 10},
-		{"f", ftostring, 6},
-		{".", ftostring, 0},
 		{NULL, NULL, 0}
 	};
 	int i = 0;

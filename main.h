@@ -16,7 +16,6 @@ int _printf(const char *format, ...);
 int _putchar(va_list args, int mode);
 int stringiterator(va_list args, int mode);
 int ntostring(va_list args, int mode);
-int ftostring(va_list args, int mode);
 int singlewrite(char c);
 ftype func_finder(char c);
 
