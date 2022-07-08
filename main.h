@@ -6,7 +6,8 @@
 #include <string.h>
 #include <stddef.h>
 
-typedef struct function_type {
+typedef struct function_type
+{
 	char *fmt;
 	int (*op)(va_list ap, int mode);
 	int mode;
