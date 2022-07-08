@@ -33,7 +33,7 @@ int singlewrite(char c)
 }
 
 /**
- * stringiterator: iterate over a string and return its contents
+ * stringiterator - iterate over a string and return its contents
  * @ap: string to iterate
  * @mode: usage mode
  *

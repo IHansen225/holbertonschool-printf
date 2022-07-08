@@ -3,7 +3,7 @@
 #include <stddef.h>
 
 /**
- * _printf: print string to stdout using variable arguments
+ * _printf - print string to stdout using variable arguments
  * @format: template string to print
  *
  * Return: string length
