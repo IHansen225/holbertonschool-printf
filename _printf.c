@@ -16,9 +16,7 @@ int _printf(const char *format, ...)
 	va_list ap;
 
 	if (format == NULL)
-	{
 		return (-1);
-	}
 	else
 	{
 		va_start(ap, format);
@@ -35,16 +33,13 @@ int _printf(const char *format, ...)
 				}
 				else if ((format[i] == '%') && (format[i + 1] == '\0'))
 					continue;
-				else
+				else if ((format[i] == '%') && (format[i] == '%'))
 				{
-					if ((format[i] == '%') && (format[i] == '%'))
-					{
 						j += singlewrite(format[i++]);
 						i++;
-					}
-					else
-						j += singlewrite(format[i++]);
 				}
+				else
+						j += singlewrite(format[i++]);
 			}
 		va_end(ap);
 	}
