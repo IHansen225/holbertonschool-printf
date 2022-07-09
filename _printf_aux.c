@@ -95,12 +95,13 @@ int ntostring(va_list ap, int base)
 	return ((int)len);
 }
 
-int untostring(va_list ap, unsigned int base)
+int untostring(va_list ap, int base)
 {
 	char *buffer;
 	unsigned int n = (unsigned int)(va_arg(ap, int));
 	int i = 0, len;
 
+	base = (unsigned int)base;
 	buffer = malloc(64);
 	if (!buffer)
 		return (0);
