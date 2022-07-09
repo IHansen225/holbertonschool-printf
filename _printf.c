@@ -3,6 +3,18 @@
 #include <stddef.h>
 
 /**
+ * singlewrite - write a single character
+ * @c: character to write
+ *
+ * Return: 1
+ */
+
+int singlewrite(char c)
+{
+	return (write(1, &c, 1));
+}
+
+/**
  * _printf - print string to stdout using variable arguments
  * @format: template string to print
  *

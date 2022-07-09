@@ -17,8 +17,9 @@ ftype func_finder(char c)
 		{"x", ntostring, 16},
 		{"X", ntostring, 32},
 		{"o", ntostring, 8},
-		{"b", ntostring, 2},
+		{"b", untostring, 2},
 		{"i", ntostring, 10},
+		{"u", untostring, 10},
 		{NULL, NULL, 0}
 	};
 	int i = 0;
