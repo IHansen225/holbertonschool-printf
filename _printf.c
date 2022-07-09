@@ -35,7 +35,7 @@ int _printf(const char *format, ...)
 			}
 			else if ((format[i] == '%') && (format[i + 1] == '\0'))
 				continue;
-			else if ((format[i] == '%') && (format[i] == '%'))
+			else if ((format[i] == '%') && (format[i + 1] == '%'))
 			{
 				j += singlewrite(format[i++]);
 				i++;
