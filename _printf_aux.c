@@ -58,7 +58,6 @@ int ntostring(va_list ap, int base)
 	long int n = (long)(va_arg(ap, int));
 	long int i = 0, len, flag;
 
-	base = ((base == 32) ? 16);
 	buffer = malloc(64);
 	if (!buffer)
 		return (0);
@@ -100,9 +99,11 @@ int untostring(va_list ap, int base)
 {
 	char *buffer;
 	unsigned int n = (unsigned int)(va_arg(ap, int));
-	int i = 0, len;
+	int i = 0, len, flag;
 
 	base = (unsigned int)base;
+	flag = ((base == 32) ? 1 : 0);
+	base = ((base == 32) ? 16 : base);
 	buffer = malloc(64);
 	if (!buffer)
 		return (0);
@@ -115,7 +116,7 @@ int untostring(va_list ap, int base)
 			else if (base == 16)
 			{
 				if ((n % base) >= 10)
-					buffer[i++] = ((n % base) + ((base == 32) ? 55 : 87));
+					buffer[i++] = ((n % base) + ((flag == 1) ? 55 : 87));
 				else
 					buffer[i++] = ((n % base) + '0');
 			}
