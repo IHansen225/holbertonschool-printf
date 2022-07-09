@@ -99,7 +99,7 @@ int untostring(va_list ap, unsigned int base)
 {
 	char *buffer;
 	unsigned int n = (unsigned int)(va_arg(ap, int));
-	unsigned int i = 0, len, flag;
+	int i = 0, len;
 
 	buffer = malloc(64);
 	if (!buffer)
