@@ -58,7 +58,7 @@ int ntostring(va_list ap, int base)
 	long int n = (long)(va_arg(ap, int));
 	long int i = 0, len, flag;
 
-	buffer = malloc(64);
+	buffer = malloc(32);
 	if (!buffer)
 		return (0);
 	flag = ((n < 0) ? 1 : 0);
