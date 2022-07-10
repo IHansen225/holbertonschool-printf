@@ -38,7 +38,7 @@ int _printf(const char *format, ...)
 				if (func_data.op != NULL)
 				{
 					j += (*(func_data.op))(ap, func_data.mode);
-					i = ((*(func_data.fmt) == '.') ? (i + 4) : (i + 2));
+					i += 2;
 				} else
 				{
 					j += singlewrite(format[i++]);
