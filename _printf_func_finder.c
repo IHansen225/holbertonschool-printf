@@ -20,6 +20,8 @@ ftype func_finder(char c)
 		{"b", untostring, 2},
 		{"i", ntostring, 10},
 		{"u", untostring, 10},
+		{"r", revstring, 0},
+		{"R", strot, 0},
 		{NULL, NULL, 0}
 	};
 	int i = 0;

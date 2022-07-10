@@ -95,6 +95,14 @@ int ntostring(va_list ap, int base)
 	return ((int)len);
 }
 
+/**
+ * untostring - convert an int to a string
+ * @ap: int to convert
+ * @base: int base
+ *
+ * Return: strlen
+ */
+
 int untostring(va_list ap, int base)
 {
 	char *buffer;
