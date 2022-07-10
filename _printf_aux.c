@@ -80,7 +80,7 @@ int ntostring(va_list ap, int base)
 		}
 		if (flag && (base == 10))
 			buffer[i++] = 45;
-		i = ((base == 2) ? i : i - 1);
+		/*i = ((base == 2) ? i : i - 1);*/
 		for (; i >= 0; i--)
 			write(1, &buffer[i], 1);
 	} else
