@@ -95,10 +95,13 @@ int strot(va_list ap, int mode)
 	{
 		l = strlen(s);
 		aux1 = _strdup(s);
-		aux2 = rot13(aux1);
-		write(1, aux2, l);
-		free(aux1);
-		va_end(ap);
+		if (aux1 != NULL)
+		{
+			aux2 = rot13(aux1);
+			write(1, aux2, l);
+			free(aux1);
+			va_end(ap);
+		}
 	}
 	return (l);
 }
