@@ -29,9 +29,9 @@ Conversion control characters describe the format of how the message string uses
 
 **main.h** - its the header file that contain all prototypes functions and the standard libraries used in the other functions
 
-<h2 align="center">FLAG CHARACTERS</h2>
+<h2 align="center">Flag characters</h2>
   
-The character that specifies the Format is **'%'** and it be used followed by one of the next specific characters:
+The character that specifies the Format is `'%'` and it be used followed by one of the next specific characters:
 Format | Description
 ------------- | -------------
 %c | print a character
@@ -46,8 +46,19 @@ Format | Description
 %r | print a reverse string
 %R | print a rot13 string
 
-<h2 align="center"> EXAMPLES </h2>
-This is an example of printf() function when we call in main.c:
+<h2 align="center"> How use it </h2>
+
+Compile all the ".c" files (*.c) including the main.c file you are using.
+
+In this case the compiler used was `gcc 4.8.4` with this flags : `-Wall` `-Wextra` `-Werror` `-pedantic` `-std=gnu89` `-Wno-format`
+
+Proceed running this command:
+
+`gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c`
+
+<h2 align="center"> Examples </h2>
+
+This is an example of `printf()` function when we call in main.c:
 
 
     #include "main.h"
