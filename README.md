@@ -55,7 +55,7 @@ This is an example of printf() function when we call in main.c:
     int main(void)
     {
     char string_ex[] = "Example string";
-    int integer_ex = -42069;
+    int integer_ex = 42069;
     char char_ex = '?';
     
     _printf("This is a string: %s\n", string_ex);
@@ -78,3 +78,7 @@ Output:
     This is conversion from decimal to octal: 122125
     This is conversion from decimal to binary: 11111111111111110101101110101011
     This is a reverse string: gnirts elpmaxE
+    
+    
+    Contributors
+    Ivan Hansen, Ignacio Capezzolo
