@@ -38,10 +38,10 @@ Format | Description
 %s | print a string of characters
 %d | print an integer of base 10
 %i | same as %d
-%x | print an hexadecimal number
-%X | print an hexadecimal number
-%o | print an octal number
-%b | print a binary number
+%x | converts a decimal to an hexadecimal number with lowercase characters
+%X | converts a decimal to an hexadecimal number with uppercase characters
+%o | converts a decimal to an octal number
+%b | converts a decimal to a binary number
 %u | print an unsigned decimal (integer) number
 %r | print a reverse string
 %R | print a rot13 string

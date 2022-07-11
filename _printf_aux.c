@@ -130,8 +130,8 @@ int untostring(va_list ap, int base)
 			}
 			n = n / base;
 		}
-		i = ((base == 2) ? i : i - 1);
-		for (i = i - 1; i >= 0; i--)
+		i = i - 1;
+		for (i = i; i >= 0; i--)
 			write(1, &buffer[i], 1);
 	} else
 	{
