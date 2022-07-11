@@ -1,7 +1,6 @@
 <h1 align="center">_printf</h1>
 
-<p>This Repository had all functions to make _printf() works correctly.<br>
- _printf() its a custom function based on printf() function from <stdio.h> library.</p>
+This Repository had all functions to make _printf() works correctly. _printf() its a custom function based on printf() function from <stdio.h> library.
 
 <h2 align="center">Description</h2>
 
