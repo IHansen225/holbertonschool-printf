@@ -60,6 +60,10 @@ Proceed running this command:
 
 `gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c`
 
+And then execute with:
+
+`./a.out`
+
 <h2 align="center"> Examples </h2>
 
 This is an example of `printf()` function when we call in main.c:
