@@ -65,6 +65,7 @@ This is an example of printf() function when we call in main.c:
     _printf("This is conversion from decimal to octal: %o\n", integer_ex);
     _printf("This is conversion from decimal to binary: %b\n", integer_ex);
     _printf("This is a border case: %% \n");
+    _printf("This is a reverse string: %r\n", string_ex);
 
     return (0);
     }
@@ -72,11 +73,12 @@ This is an example of printf() function when we call in main.c:
 Output:
 
     This is a string: Example string
-    This is an integer: -42069
+    This is an integer: 42069
     This is a char: ?
-    This is conversion from decimal to hex: ffff5bab
+    This is conversion from decimal to hex: a455
     This is conversion from decimal to octal: 122125
-    This is conversion from decimal to binary: 11111111111111110101101110101011
+    This is conversion from decimal to binary: 1010010001010101
+    This is a border case: %
     This is a reverse string: gnirts elpmaxE
     
 Contributors:
