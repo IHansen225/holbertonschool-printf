@@ -33,17 +33,19 @@ Conversion control characters describe the format of how the message string uses
 <h2 align="center">FLAG CHARACTERS</h2>
   
 The character that specifies the Format is **'%'** and it be used followed by one of the next specific characters:
->%c - print a character
->%s - print a string of characters
->%d - print an integer of base 10
->%i - same as %d
->%x - print an hexadecimal number
->%X - print an hexadecimal number
->%o - print an octal number
->%b - print a binary number
->%u - print an unsigned decimal (integer) number
->%r - print a reverse string
->%R - print a rot13 string
+Format | Description
+------------- | -------------
+%c | print a character
+%s | print a string of characters
+%d | print an integer of base 10
+%i | same as %d
+%x | print an hexadecimal number
+%X | print an hexadecimal number
+%o | print an octal number
+%b | print a binary number
+%u | print an unsigned decimal (integer) number
+%r | print a reverse string
+%R | print a rot13 string
 
 <h2 align="center"> EXAMPLES </h2>
 This is an example of printf() function when we call in main.c:
