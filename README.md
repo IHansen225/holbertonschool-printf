@@ -5,7 +5,10 @@
 
 <h2 align="center">Description</h2>
 
-_printf() is a variadic function that take an argument called "format" that is a string and also a variable list of arguments
+_printf() is a variadic function that take an argument called "format" that is a string and also a variable list of arguments.
+This string can display formatted variables and special control characters, such as new lines (‘\n’), backspaces (‘\b’) and tabspaces (‘\t’).
+Conversion control characters describe the format of how the message string uses the other arguments. If printf() contains more than one argument then the format of the output is defined using a percent (%) character followed by a format description character
+
 
 <h2 align="center">Files</h2>
 
@@ -30,17 +33,17 @@ _printf() is a variadic function that take an argument called "format" that is a
 <h2 align="center">FLAG CHARACTERS</h2>
   
 The character that specifies the Format is **'%'** and it be used followed by one of the next specific characters:
-%c - print a character
-%s - print a string of characters
-%d - print an integer of base 10
-%i - same as %d
-%x - print an hexadecimal number
-%X - print an hexadecimal number
-%o - print an octal number
-%b - print a binary number
-%u - print an unsigned decimal (integer) number
-%r - print a reverse string
-%R - print a rot13 string
+>%c - print a character
+>%s - print a string of characters
+>%d - print an integer of base 10
+>%i - same as %d
+>%x - print an hexadecimal number
+>%X - print an hexadecimal number
+>%o - print an octal number
+>%b - print a binary number
+>%u - print an unsigned decimal (integer) number
+>%r - print a reverse string
+>%R - print a rot13 string
 
 <h2 align="center"> EXAMPLES </h2>
 This is an example of printf() function when we call in main.c:
