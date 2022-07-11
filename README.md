@@ -31,6 +31,8 @@ if the functions has an error returns -1
 >_strdup - copy of the string given as a parameter<br>
 >strot - convert a string of chars to rot13<br>
 
+**man_3_printf** - manpage for the correct use of _printf()
+
 **main.h** - its the header file that contain all prototypes functions and the standard libraries used in the other functions
 
 <h2 align="center">Flag characters</h2>
