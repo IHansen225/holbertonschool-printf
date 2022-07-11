@@ -8,6 +8,10 @@ _printf() is a variadic function that take an argument called "format" that is a
 This string can display formatted variables and special control characters, such as new lines (‘\n’), backspaces (‘\b’) and tabspaces (‘\t’).
 Conversion control characters describe the format of how the message string uses the other arguments. If printf() contains more than one argument then the format of the output is defined using a percent (%) character followed by a format description character
 
+<h2 align="center">Return value</h2>
+
+The succesfull execution of _printf returns the total amount of characters printed, excluding the null character.
+if the functions has an error returns -1
 
 <h2 align="center">Files</h2>
 
