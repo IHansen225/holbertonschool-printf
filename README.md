@@ -79,5 +79,6 @@ Output:
     This is conversion from decimal to binary: 11111111111111110101101110101011
     This is a reverse string: gnirts elpmaxE
     
-Contributors
+Contributors:
+
 Ivan Hansen, Ignacio Capezzolo
