@@ -8,6 +8,10 @@ _printf() is a variadic function that take an argument called "format" that is a
 This string can display formatted variables and special control characters, such as new lines (‘\n’), backspaces (‘\b’) and tabspaces (‘\t’).
 Conversion control characters describe the format of how the message string uses the other arguments. If printf() contains more than one argument then the format of the output is defined using a percent (%) character followed by a format description character
 
+<h2 align="center">Return value</h2>
+
+The succesfull execution of _printf returns the total amount of characters printed, excluding the null character.
+if the functions has an error returns -1
 
 <h2 align="center">Files</h2>
 
@@ -27,11 +31,13 @@ Conversion control characters describe the format of how the message string uses
 >_strdup - copy of the string given as a parameter<br>
 >strot - convert a string of chars to rot13<br>
 
+**man_3_printf** - manpage for the correct use of _printf()
+
 **main.h** - its the header file that contain all prototypes functions and the standard libraries used in the other functions
 
-<h2 align="center">FLAG CHARACTERS</h2>
+<h2 align="center">Flag characters</h2>
   
-The character that specifies the Format is **'%'** and it be used followed by one of the next specific characters:
+The character that specifies the Format is `'%'` and it be used followed by one of the next specific characters:
 Format | Description
 ------------- | -------------
 %c | print a character
@@ -46,8 +52,23 @@ Format | Description
 %r | print a reverse string
 %R | print a rot13 string
 
-<h2 align="center"> EXAMPLES </h2>
-This is an example of printf() function when we call in main.c:
+<h2 align="center"> How use it </h2>
+
+Compile all the ".c" files (*.c) including the main.c file you are using.
+
+In this case the compiler used was `gcc 4.8.4` with this flags : `-Wall` `-Wextra` `-Werror` `-pedantic` `-std=gnu89` `-Wno-format`
+
+Proceed running this command:
+
+`gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c`
+
+And then execute with:
+
+`./a.out`
+
+<h2 align="center"> Examples </h2>
+
+This is an example of `printf()` function when we call in main.c:
 
 
     #include "main.h"
