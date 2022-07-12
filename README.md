@@ -66,6 +66,10 @@ And then execute with:
 
 `./a.out`
 
+<h2> Flowchart </h2>
+<br>
+<img src="https://github.com/Nanxuss/holbertonschool-printf/blob/main/main_function_flux.png?raw=true">
+
 <h2 align="center"> Examples </h2>
 
 This is an example of `printf()` function when we call in main.c:
